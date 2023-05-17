@@ -4,9 +4,128 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Form</title>
+  <title>Form Example</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  
+  <h1>Homework for CSS flexbox</h1>
+  <form id="container">
+    <fieldset>
+      <legend>Personal Info</legend>
+      <div class="input-container">
+        <label for="name">First Name</label>
+      <input autofocus id ="name" type="text">
+      </div>
+      <div class="input-container">
+        <label for="surname">Last Name</label>
+      <input id ="surname" type="text">
+      </div>
+      <div class="input-container">
+        <label for="birthday">Birthday</label>
+      <input type="date" name="birthday" id="birthday">
+      </div>
+      <div class="input-container">
+        <label for="Gender">Gender</label>
+      <label for="male">Male</label>
+      <input type="radio" id="male" name = "gender">
+      <label for="female">Female</label>
+      <input type="radio" id="female" name = "gender">
+    </div>
+    <div class="input-container">
+      <label for="Drive Experience">Drive Experience</label>
+    <select name="experience" id="experience">
+      <option value="---">---</option>
+      <option value="expert">expert</option>
+      <option value="more than 10">more than 10</option>
+      <option value="5-10">5-10</option>
+    </select>
+    </div>
+    </fieldset>
+    <fieldset>
+      <legend>Contacts</legend>
+      <div class="input-container">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email">
+      </div>
+      <div class="input-container">
+        <label for="mobile">Phone</label>
+        <input id ="mobile" type="text">
+      </div>
+      <div class="textarea-container">
+        <label for="work">Address</label>
+        <input id ="work" type="text">
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>Car Info</legend>
+      <div class="input-container">
+      <label for="name">Brand</label>
+      <select name="brand" id="brand">
+      <option value="">---</option>
+      <option value="">---</option>
+      <option value="">---</option>
+      </select>
+      </div>
+      <div class="input-container">
+      <label for="name">Model</label>
+      <select name="Model" id="Model">
+        <option value="">---</option>
+        <option value="">---</option>
+        <option value="">---</option>
+        </select>
+      </div>
+      <div>
+        <label for="street">Used</label>
+         <input type="radio" name="Used" id="used">
+      </div>
+      <div class="radio-container">
+        <div>
+          <label for="red">Red</label>
+          <input type="radio" name="color" id="red" />
+        </div>
+        <div>
+          <label for="black">Black</label>
+          <input type="radio" name="color" id="black" />
+        </div>
+        <div>
+          <label for="blue">Blue</label>
+          <input type="radio" name="color" id="blue" />
+        </div>
+        <div>
+          <label for="white">White</label>
+          <input type="radio" name="color" id="white" />
+        </div>
+        <div>
+          <label for="grey">Grey</label>
+          <input type="radio" name="color" id="grey" />
+        </div>
+      </div>
+      <div id="range">
+        <label for="price">Price</label><br />
+        <input
+          type="range"
+          id="price"
+          name="price"
+          min="10"
+          max="80"
+          step="10"
+          list="money" />
+        <datalist id="money">
+          <option value="10" label="10"></option>
+          <option value="20" label="20"></option>
+          <option value="30" label="30"></option>
+          <option value="40" label="40"></option>
+          <option value="50" label="50"></option>
+          <option value="60" label="60"></option>
+          <option value="70" label="70"></option>
+          <option value="80" label="80"></option>
+        </datalist>
+      </div>
+    </fieldset>
+    <div class="btn-container">
+      <button type="reset">Cancel</button>
+      <button type="submit">Ok</button>
+    </div>
+  </form>
 </body>
 </html>
